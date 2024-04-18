@@ -1,0 +1,36 @@
+{
+    "name": "ROS2-dev",
+    "privileged": true,
+    "remoteUser": "builder",
+    "image": "ghcr.io/nathanaelgandhi/dev-image-ros2:main",
+    "initializeCommand": "docker pull ghcr.io/nathanaelgandhi/dev-image-ros2:main",
+    "workspaceFolder": "/ros2-dev",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/ros2-dev,type=bind",
+    "customizations": {
+        "vscode": {
+            "extensions":[
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-themes",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack",
+                "twxs.cmake",
+                "donjayamanne.python-extension-pack",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "containerEnv": {
+        "DISPLAY": "unix:0",
+        "ROS_LOCALHOST_ONLY": "1",
+        "ROS_DOMAIN_ID": "42"
+    },
+    "runArgs": [
+        "--net=host",
+        "-e", "DISPLAY=${env:DISPLAY}"
+    ],
+    "mounts": [
+       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
+        "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
+    ],
+    "postCreateCommand": "rosdep update && rosdep install --from-paths /ros2-dev --ignore-src -y && sudo chown -R $(whoami) /ros2-dev/"
+}
