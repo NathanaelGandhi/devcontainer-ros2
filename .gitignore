@@ -4,6 +4,8 @@
 !.devcontainer/
 !.gitignore
 !.pre-commit-config.yaml
+!.vscode/
+.vscode/*
 !.vscode/c_cpp_properties.json
 !LICENCE
 !CODEOWNERS
