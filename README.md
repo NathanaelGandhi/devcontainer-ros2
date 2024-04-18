@@ -12,4 +12,6 @@
   - ```source /opt/ros/humble/setup.bash && source install/local_setup.bash```
 - The devcontainer will update and install rosdeps post creation
 - The devcontainer targets the latest image at [ghcr.io/NathanaelGandhi/dev-image-ros2](ghcr.io/NathanaelGandhi/dev-image-ros2)
+- [c_cpp_properties.json](.vscode/c_cpp_properties.json) recursively includes from the vscode workspace dir
+- There are [vscode tasks](.vscode/tasks.json) to ```clean```, ```build``` and ```test```
 - All files that were not cloned from this repo are ignored by git. See [.gitignore](.gitignore)
