@@ -1,6 +1,6 @@
 # devcontainer-ros2
-- If you work on multiple projects, I would recommend cloning this repo with a project name instead of the default repo name. Example:
-  - ```git clone https://github.com/NathanaelGandhi/devcontainer-ros2.git my-project```
+- If you work on multiple projects, clone this repo with a project name instead of the default. Example:
+  - ```git clone https://github.com/NathanaelGandhi/devcontainer-ros2.git <my-project>```
 - Feel free to add 0-unlimited ros2_ws(s) or whatever else you like into this devcontainer
 
 ## Recommendations:
