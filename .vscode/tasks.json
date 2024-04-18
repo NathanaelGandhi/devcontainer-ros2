@@ -34,7 +34,7 @@
         {
             "label": "test",
             "type": "shell",
-            "command": "source /opt/ros/humble/setup.bash && colcon test && colcon test-result",
+            "command": "source /opt/ros/humble/setup.bash && colcon build && colcon test && colcon test-result",
             "group": {
                 "kind": "test",
                 "isDefault": true,
