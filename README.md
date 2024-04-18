@@ -13,4 +13,3 @@
 - The devcontainer will update and install rosdeps post creation
 - The devcontainer targets the latest image at [ghcr.io/NathanaelGandhi/dev-image-ros2](ghcr.io/NathanaelGandhi/dev-image-ros2)
 - All files that were not cloned from this repo are ignored by git. See [.gitignore](.gitignore)
-

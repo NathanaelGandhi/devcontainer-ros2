@@ -62,4 +62,3 @@ repos:
             args: [--style=file]
             types_or: [c++, c, cuda]
             require_serial: true
-            
