@@ -1,0 +1,49 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm -rf /ros2-dev/build /ros2-dev/install /ros2-dev/log",
+            "group": {
+                "kind": "none",
+                "isDefault": true,
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "source /opt/ros/humble/setup.bash && colcon build",
+            "group": {
+                "kind": "build",
+                "isDefault": true,
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "source /opt/ros/humble/setup.bash && colcon test && colcon test-result",
+            "group": {
+                "kind": "test",
+                "isDefault": true,
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+            },
+            "problemMatcher": []
+        }
+    ]
+}
