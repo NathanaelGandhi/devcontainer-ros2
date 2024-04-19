@@ -2,6 +2,7 @@
 /*
 
 !.devcontainer/
+!.envrc
 !.gitignore
 !.pre-commit-config.yaml
 !.vscode/
