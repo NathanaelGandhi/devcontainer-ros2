@@ -3,6 +3,7 @@
 
 !.devcontainer/
 !.envrc
+!.github/
 !.gitignore
 !.pre-commit-config.yaml
 !.vscode/
