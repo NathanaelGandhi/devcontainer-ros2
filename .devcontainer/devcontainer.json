@@ -32,5 +32,5 @@
        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
     ],
-    "postCreateCommand": "rosdep update && rosdep install --from-paths /ros2-dev --ignore-src -y && sudo chown -R $(whoami) /ros2-dev/"
+    "postCreateCommand": "rosdep update && rosdep install --from-paths . --ignore-src -y && sudo chown -R $(whoami) /ros2-dev/"
 }
