@@ -1,9 +1,11 @@
 {
     "name": "ROS2-dev",
     "privileged": true,
+    // remoteUser needs to match the containers username
     "remoteUser": "builder",
-    "image": "ghcr.io/nathanaelgandhi/dev-image-ros2:main",
-    "initializeCommand": "docker pull ghcr.io/nathanaelgandhi/dev-image-ros2:main",
+    // If using a local image, ensure it already exists for successful container setup
+    "image": "containers-ros2-dev-image:latest",
+    "initializeCommand": "./containers-ros2/build-images.py",
     "workspaceFolder": "/ros2-dev",
     "workspaceMount": "source=${localWorkspaceFolder},target=/ros2-dev,type=bind",
     "customizations": {

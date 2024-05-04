@@ -2,14 +2,15 @@
 /*
 
 !.devcontainer/
-!.envrc
 !.github/
-!.gitignore
-!.pre-commit-config.yaml
 !.vscode/
 .vscode/*
 !.vscode/c_cpp_properties.json
 !.vscode/tasks.json
-!LICENCE
+!containers-ros2/
+!.envrc
+!.gitignore
+!.pre-commit-config.yaml
 !CODEOWNERS
+!LICENCE
 !README.md
