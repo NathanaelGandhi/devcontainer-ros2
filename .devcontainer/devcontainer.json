@@ -11,12 +11,10 @@
     "customizations": {
         "vscode": {
             "extensions":[
-                "ms-vscode.cpptools",
-                "ms-vscode.cpptools-themes",
-                "ms-vscode.cmake-tools",
                 "ms-vscode.cpptools-extension-pack",
-                "twxs.cmake",
-                "donjayamanne.python-extension-pack",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-pylance",
                 "eamodio.gitlens"
             ]
         }
