@@ -14,8 +14,8 @@
     | Source target | bash | zsh |
     | --- | --- | --- |
     | ROS2 | ```$sr``` | ```$zsr``` |
-    | colcon | ```$slc``` | ```$zslc``` |
-    | local colcon | ```$sc``` | ```$zsc``` |
+    | colcon | ```$sc``` | ```$zsc``` |
+    | local colcon | ```$slc``` | ```$zslc``` |
 - The devcontainer will update and install rosdeps post creation
 - The devcontainer targets the latest dev image that you can build from the [containers-ros2](containers-ros2) submodule
 - [c_cpp_properties.json](.vscode/c_cpp_properties.json) recursively includes from the vscode workspace dir
