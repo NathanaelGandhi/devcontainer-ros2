@@ -1,4 +1,8 @@
 # devcontainer-ros2
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/NathanaelGandhi/devcontainer-ros2/main.svg)](https://results.pre-commit.ci/latest/github/NathanaelGandhi/devcontainer-ros2/main)
+[![Release Drafter](https://github.com/NathanaelGandhi/devcontainer-ros2/actions/workflows/release-drafter.yml/badge.svg?branch=release)](https://github.com/NathanaelGandhi/devcontainer-ros2/actions/workflows/release-drafter.yml)
+[![Mirror release to humble](https://github.com/NathanaelGandhi/devcontainer-ros2/actions/workflows/mirror-release-to-humble.yaml/badge.svg?branch=release)](https://github.com/NathanaelGandhi/devcontainer-ros2/actions/workflows/mirror-release-to-humble.yaml)
+
 - If you work on multiple projects, clone this repo with a project name instead of the default. Example:
   - ```git clone --recursive https://github.com/NathanaelGandhi/devcontainer-ros2.git <my-project>```
 - Feel free to add 0-unlimited ros2_ws(s)/packages or whatever else you like into this devcontainer,<br>it can act as a ws or just a dir, it is up to you
