@@ -11,11 +11,11 @@
 - You are responsible for sourcing ROS2 in every new shell:
   - ```source /opt/ros/humble/setup.$(basename $SHELL) && source install/local_setup.$(basename $SHELL)```
   - Helpful envs are provided through direnv. See config in [.envrc](.envrc)
-    | Source target | bash | zsh |
-    | --- | --- | --- |
-    | ROS2 | ```$sr``` | ```$zsr``` |
-    | colcon | ```$sc``` | ```$zsc``` |
-    | local colcon | ```$slc``` | ```$zslc``` |
+    | Source target | Shell agnostic | bash | zsh |
+    | --- | --- | --- | --- |
+    | ROS2 | ```$sr``` | ```$bsr``` | ```$zsr``` |
+    | colcon | ```$sc``` | ```$bsc``` | ```$zsc``` |
+    | local colcon | ```$slc``` | ```$bslc``` | ```$zslc``` |
 - The devcontainer will update and install rosdeps post creation
 - The devcontainer targets the latest dev image that you can build from the [containers-ros2](containers-ros2) submodule
 - [c_cpp_properties.json](.vscode/c_cpp_properties.json) recursively includes from the vscode workspace dir
